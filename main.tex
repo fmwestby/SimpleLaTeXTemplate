@@ -1,0 +1,68 @@
+\documentclass[11pt,a4paper]{article}
+
+% Encoding and language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+% Recommended with biblatex
+\usepackage{csquotes}
+
+% Sans-serif as default family
+\renewcommand{\familydefault}{\sfdefault}
+
+% No paragraph indentation + space between paragraphs
+\usepackage{parskip}
+
+% Math packages
+\usepackage{amsmath}    % core math
+\usepackage{amssymb}    % extra symbols
+\usepackage{amsfonts}   % extra fonts
+\usepackage{amsthm}     % theorem environments
+\usepackage{mathtools}  % extensions to amsmath
+\usepackage{bm}         % bold math symbols
+
+\usepackage{siunitx}    % units and numbers
+
+% Graphics and figures
+\usepackage{graphicx}   % \includegraphics
+\usepackage{caption}
+\usepackage{subcaption} % subfigures
+
+% Media and external files
+\usepackage{pdfpages}   % insert pages from external PDFs
+% \usepackage{multimedia} % <-- REMOVE this; causes the error with hyperref
+\usepackage{animate}    % animated graphics from sequences
+\usepackage{attachfile2}% attach arbitrary files to the PDF
+
+% Colors and hyperlinks
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Bibliography with biblatex
+\usepackage[
+  backend=biber,
+  style=authoryear, % or numeric, alphabetic, etc.
+  sorting=nyt
+]{biblatex}
+\addbibresource{references.bib} % your .bib file
+
+\title{Document Title}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This is a sample paragraph. It should have no indentation at the beginning,
+and there should be some vertical space between this paragraph and the next.
+
+This is another paragraph. The sans-serif font is default throughout the document.
+
+
+\printbibliography
+
+\end{document}
